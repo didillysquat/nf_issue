@@ -1,0 +1,56 @@
+May-15 12:36:51.868 [main] DEBUG nextflow.cli.Launcher - $> nextflow main.nf -profile issue_profile
+May-15 12:36:51.927 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.1
+May-15 12:36:51.939 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/nssd2/humebc/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.2
+May-15 12:36:51.944 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+May-15 12:36:51.945 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+May-15 12:36:51.947 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+May-15 12:36:51.952 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+May-15 12:36:51.961 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /nssd2/humebc/987_add_barcode_automation/issue/nextflow.config
+May-15 12:36:51.962 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /nssd2/humebc/987_add_barcode_automation/issue/nextflow.config
+May-15 12:36:51.975 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `issue_profile`
+May-15 12:36:52.374 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [issue_profile]
+May-15 12:36:52.396 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+May-15 12:36:52.408 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [golden_perlman] DSL2 - revision: 44555d626b
+May-15 12:36:52.409 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+May-15 12:36:52.409 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+May-15 12:36:52.414 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /nssd2/humebc/.nextflow/secrets/store.json
+May-15 12:36:52.416 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@64db4967] - activable => nextflow.secret.LocalSecretsProvider@64db4967
+May-15 12:36:52.453 [main] DEBUG nextflow.Session - Session UUID: 9ef38df6-f98a-4e73-90b9-48d8ca2bd4d4
+May-15 12:36:52.453 [main] DEBUG nextflow.Session - Run name: golden_perlman
+May-15 12:36:52.454 [main] DEBUG nextflow.Session - Executor pool size: 128
+May-15 12:36:52.460 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=384; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+May-15 12:36:52.474 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.1 build 5866
+  Created: 15-04-2023 06:51 UTC (07:51 BST)
+  System: Linux 5.15.0-58-generic
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 11.0.18+10-post-Ubuntu-0ubuntu120.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 3958041@bioinformatics-System-Product-Name [127.0.1.1]
+  CPUs: 128 - Mem: 251.5 GB (206.1 GB) - Swap: 2 GB (68 KB)
+May-15 12:36:52.486 [main] DEBUG nextflow.Session - Work-dir: /nssd2/humebc/987_add_barcode_automation/issue/work [ext2/ext3]
+May-15 12:36:52.486 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /nssd2/humebc/987_add_barcode_automation/issue/bin
+May-15 12:36:52.492 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+May-15 12:36:52.498 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+May-15 12:36:52.508 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+May-15 12:36:52.514 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 129; maxThreads: 1000
+May-15 12:36:52.554 [main] DEBUG nextflow.Session - Session start
+May-15 12:36:52.630 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-15 12:36:52.686 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:hellow_w_proc` matches process hellow_w_proc
+May-15 12:36:52.687 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-15 12:36:52.687 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-15 12:36:52.691 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+May-15 12:36:52.694 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=128; memory=251.5 GB; capacity=128; pollInterval=100ms; dumpInterval=5m
+May-15 12:36:52.784 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: hellow_w_proc
+May-15 12:36:52.786 [main] DEBUG nextflow.Session - Igniting dataflow network (1)
+May-15 12:36:52.786 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > hellow_w_proc
+May-15 12:36:52.786 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+May-15 12:36:52.787 [main] DEBUG nextflow.Session - Session await
+May-15 12:36:52.880 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-15 12:36:52.883 [Task submitter] INFO  nextflow.Session - [55/f27552] Submitted process > hellow_w_proc
+May-15 12:36:53.504 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: hellow_w_proc; status: COMPLETED; exit: 0; error: -; workDir: /nssd2/humebc/987_add_barcode_automation/issue/work/55/f275526a6a6d77168402e385fef700]
+May-15 12:36:53.511 [main] DEBUG nextflow.Session - Session await > all processes finished
+May-15 12:36:53.600 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-15 12:36:53.606 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=593ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+May-15 12:36:53.787 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+May-15 12:36:53.797 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+May-15 12:36:53.797 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
